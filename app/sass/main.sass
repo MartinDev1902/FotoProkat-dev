@@ -1,0 +1,107 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "typography"
+
+//Default
+body
+  font-family: 'Ubuntu', sans-serif
+  padding: 0
+  margin: 0
+  font-size: 14px
+  font-weight: $regularFont
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+p
+  padding: 0
+  margin: 0
+
+//Components
+.with-indicator
+  position: relative
+  .indicator
+    position: absolute
+    width: 20px
+    height: 20px
+    box-shadow: $boxShadow
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 12px
+    top: -12px
+    right: -12px
+    background-color: $whiteColor
+    &--accent
+      background: $mainGradient
+      color: $whiteColor
+      font-weight: $boldFont
+
+.button
+  a
+    display: flex
+    padding: 12px 30px
+    font-weight: $boldFont
+    box-shadow: $boxShadow
+    border-radius: 100px
+  &--light a
+    background-color: $whiteColor
+  &--dark a
+    background: $mainGradient
+    color: $whiteColor
+    img
+      display: inline-block !important
+      width: auto !important
+      margin-right: 10px
+
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding-right: 15px
+  padding-left: 15px
+  position: relative
+  &--header
+    position: static
+.section-margin
+  margin-top: 96px
+.section-title
+  text-align: center
+  text-transform: uppercase
+  margin-bottom: 27px
+
+
+
+//Sections
+@import "./sections/header"
+@import "./sections/main-slider"
+@import "./sections/advantages"
+@import "./sections/products-slider"
+
+
+
+@media only screen and (max-width : 1200px)
+  .container--header
+    padding-right: 0
+
+
+@media only screen and (max-width : 992px)
+  .container--header
+    padding-right: 15px
+  .with-indicator
+    .indicator
+      width: 6px
+      height: 6px
+      background: $mainGradient
+      top: -5px
+      span
+        display: none
+
+@media only screen and (max-width : 460px)
+  .button a
+    padding: 12px 15px
+

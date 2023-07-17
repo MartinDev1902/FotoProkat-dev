@@ -1,0 +1,36 @@
+@import "vars"
+h1
+  font-size: 30px
+  font-weight: $boldFont
+  line-height: 61px
+  text-transform: uppercase
+  margin: 0
+
+h2
+  font-size: 18px
+  font-weight: $boldFont
+  line-height: 20px
+  text-transform: uppercase
+  span
+    color: $accentColor
+
+h3
+  font-size: 16px
+  font-weight: $boldFont
+  line-height: 26px
+
+a
+  text-decoration: none
+  color: $textColor
+  font-weight: $boldFont
+
+.caption
+  color: $lightTextColor
+  line-height: 20px
+
+@media only screen and (max-width : 560px)
+  h1, h2
+    span
+      color: $textColor !important
+      background: none !important
+      -webkit-text-fill-color: $textColor !important

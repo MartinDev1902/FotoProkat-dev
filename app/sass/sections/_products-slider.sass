@@ -1,0 +1,63 @@
+.products-slider
+  .owl-nav
+    button
+      position: absolute
+      top: 25%
+      background-color: $whiteColor !important
+      width: 40px
+      height: 40px
+      box-shadow: $boxShadow
+    .owl-prev
+      left: -15px
+    .owl-next
+      right: -15px
+.product-item
+  border: 1px solid $borderColor
+  padding: 20px 0
+  position: relative
+  &__info
+    text-align: center
+    img
+      width: auto !important
+      margin: 0 auto
+    h3
+      margin-top: 32px
+      margin-bottom: 10px
+  &__price-list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 20px
+    border-top: 1px solid $borderColor
+    border-bottom: 1px solid $borderColor
+  &__price-item
+    padding: 15px 0
+    text-align: center
+    border-right: 1px solid $borderColor
+    width: calc(100% / 4)
+    &:last-child
+      border-right: none
+    .price
+      font-weight: $boldFont
+      span
+        font-weight: $regularFont
+  &__buttons
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin-top: 20px
+  &__control
+    position: absolute
+    top: 20px
+    right: 20px
+    div
+      margin-bottom: 15px
+      &:hover
+        cursor: pointer
+
+
+
+@media only screen and (max-width : 768px)
+  .product-item
+    margin-bottom: 20px
+

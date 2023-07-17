@@ -1,0 +1,54 @@
+.slider-item
+  min-height: 650px
+  height: calc(100vh - 75px)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  .container
+    height: 100%
+  .balloon
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background: $mainGradient
+    position: absolute
+    bottom: 20px
+  &__title
+    position: absolute
+    bottom: 50px
+    left: 45px
+    z-index: 20
+    max-width: 290px
+    h1
+      background-color: $whiteColor
+      display: inline
+      padding: 13px  25px
+      box-shadow: $boxShadow
+      -webkit-box-decoration-break: clone
+      box-decoration-break: clone
+      span
+        background:  $mainGradient
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+
+
+
+@media only screen and (max-width : 768px)
+  .slider-item
+    min-height: 450px
+
+@media only screen and (max-width : 560px)
+  .slider-item
+    .balloon
+      left: 5px
+      bottom: 5px
+      width: 30px
+      height: 30px
+    &__title
+      left: 20px
+      bottom: 20px
+      h1
+        font-size: 16px
+        line-height: 42px

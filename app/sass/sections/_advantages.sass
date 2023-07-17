@@ -1,0 +1,48 @@
+.advantages
+  background-color: $backgroundColor
+  padding: 50px 0
+  &__container
+    display: flex
+    justify-content: space-between
+  &__item
+    display: flex
+    align-items: center
+    width: calc(100% / 5 - 40px)
+    img
+      margin-right: 20px
+
+@media only screen and (max-width : 1200px)
+  .advantages
+    &__item
+      width: calc(100% / 5 - 10px)
+      img
+        margin-right: 10px
+
+
+@media only screen and (max-width : 992px)
+  .advantages
+    background-color: $whiteColor
+    padding: 0
+    margin-top: 20px
+    &__container
+      justify-content: space-around
+      flex-wrap: wrap
+    &__item
+      flex-direction: column
+      background-color: $backgroundColor
+      width: calc(100% / 3 - 20px)
+      margin-bottom: 20px
+      padding: 20px 15px 30px
+      box-sizing: border-box
+      text-align: center
+      img
+        margin-right: 0
+        margin-bottom: 15px
+
+@media only screen and (max-width : 560px)
+  .advantages
+    &__container
+      justify-content: space-between
+    &__item
+      width: calc(100% / 2 - 10px)
+
